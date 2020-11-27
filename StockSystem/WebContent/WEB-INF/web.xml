@@ -4,9 +4,23 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
+    <!--  welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.jsp</welcome-file>-->
   </welcome-file-list>
+  
+
+<servlet>
+ <display-name>Testing</display-name>
+      <servlet-name>Testing</servlet-name>
+      <servlet-class>TestingServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>   
+   <servlet-name>TestingServlet</servlet-name>   
+   <url-pattern>/TestingServlet</url-pattern>   
+</servlet-mapping>
+
+  
 </web-app>
