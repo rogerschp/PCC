@@ -1,29 +1,28 @@
 package model;
 
 public class Stock {
-
-	String product;
-	int quantityAvalible;
-	int outProduct;
-	public String getProduct() {
+	
+	int quatDisp;
+	int saidaProduct;
+	Product product;
+	
+	public int getQuatDisp() {
+		return quatDisp;
+	}
+	public void setQuatDisp(int quatDisp) {
+		this.quatDisp = quatDisp;
+	}
+	public int getSaidaProduct() {
+		return saidaProduct;
+	}
+	public void setSaidaProduct(int saidaProduct) {
+		this.saidaProduct = saidaProduct;
+	}
+	public Product getProduct() {
 		return product;
 	}
-	public void setProduct(String product) {
+	public void setProduct(Product product) {
 		this.product = product;
 	}
-	public int getQuantityAvalible() {
-		return quantityAvalible;
-	}
-	public void setQuantityAvalible(int quantityAvalible) {
-		this.quantityAvalible = quantityAvalible;
-	}
-	public int getOutProduct() {
-		return outProduct;
-	}
-	public void setOutProduct(int outProduct) {
-		this.outProduct = outProduct;
-	}
-	
-	
-	
+
 }

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Connection" method="post">
-		<input type="text" value="email">
-		<input type="Password" value="password">
-		<input type="submit" value="Entrar+">
-	</form>
+<!-- Give Servlet reference to the form as an instances  
+    GET and POST services can be according to the problem statement-->
+    <form action="./LoginServlet" method="post"> 
+        <!-- Create an element with mandatory name attribute, 
+        so that data can be transfer to the servlet using getParameter() -->
+        <input type="email" name="email" placeholder="Email:"/> 
+        <br/> 
+        <input type="password" name="senha" placeholder="Senha:"/> 
+        <br/><br/><br/> 
+        <input type="submit"/> 
+    </form> 
+
 </body>
 </html>
