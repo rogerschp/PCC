@@ -14,10 +14,11 @@
         <br/> 
         <input type="text" name="amountProduct" placeholder="Quantidade de produtos:"/> 
         <br/><br/><br/> 
-        <input type="submit"  name="registerProduct">Cadastrar produto</input>
-        <input type="submit"  name="readProduct">Listar todos os produtos</input>
-        <input type="submit"  name="updateProduct">Editar produto</input>
-        <input type="submit"  name="deleteProduct">Deletar produto</input> 
+        <input type="submit"  name="registerProduct" value="Cadastrar"/>
+        <input type="submit"  name="readProduct" value="Listar"/>
+        <input type="submit"  name="readAllProducts" value="Listar todos"/>
+        <input type="submit"  name="updateProduct" value="Atualizar"/>
+        <input type="submit"  name="deleteProduct" value="Deletar"/>
     </form> 
 </body>
 </html>

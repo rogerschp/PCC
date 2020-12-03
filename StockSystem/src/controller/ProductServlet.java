@@ -38,10 +38,16 @@ public class ProductServlet extends HttpServlet {
 			
 			if (request.getParameter("registerProduct") != null) {
 				insertProduct(connectionDaatabase(), request, response);
-			} else if (request.getParameter("readProduct") != null) {
+				
+			} else if (request.getParameter("readAllProduct") != null) {
+				readAllProduct(connectionDaatabase(), request, response);
+				
+			}else if (request.getParameter("readProduct") != null) {
 				readProduct(connectionDaatabase(), request, response);
+				
 			} else if (request.getParameter("updateProduct") != null) {
 				updateProduct(connectionDaatabase(), request, response);
+				
 			} else if (request.getParameter("deleteProduct") != null) {
 				deleteProduct(connectionDaatabase(), request, response);
 			}
@@ -67,8 +73,12 @@ public class ProductServlet extends HttpServlet {
 		productDao.insertProduct(connect, request, response);
 	}
 	
-	private void readProduct(Connection connect, HttpServletRequest request, HttpServletResponse response) throws SQLException {
+	private void readProduct(Connection connect, HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
 		productDao.readProduct(connect, request, response);
+	}
+	
+	private void readAllProduct(Connection connect, HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+		productDao.readAllProduct(connect, request, response);
 	}
 	
 	private void updateProduct(Connection connect, HttpServletRequest request, HttpServletResponse response) throws SQLException {
